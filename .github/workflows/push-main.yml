@@ -7,6 +7,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    container: 
+      image: kiloexabyte/runner-image
     steps:
     - uses: actions/checkout@v4
     - run: | 
